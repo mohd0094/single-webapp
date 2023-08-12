@@ -1,0 +1,21 @@
+.accordion__button:before {
+  position: absolute;
+  right: 15px;
+}
+
+.accordion__button:before {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+}
+.accordion__button{
+  position: relative;
+}
+.accordion__button[aria-expanded='true']::before, .accordion__button[aria-selected='true']::before {
+  transform: rotate(45deg);
+}
+
+.accordion__button::before{
+  transform: rotate(228deg);
+  transition: all ease-in 0.2s;
+}
